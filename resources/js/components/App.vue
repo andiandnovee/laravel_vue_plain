@@ -1,10 +1,19 @@
 <template>
-    <h1 class="text-2xl font-bold text-blue-600">Hello Laravel + Vue + TailwindCSS + Preline!</h1>
+     <div>
+        <Navbar />  <!-- Komponen Navbar -->
+        <Dashboard />  <!-- Komponen Dashboard -->
+        </div>
 </template>
 
 <script>
+import Navbar from '@components/general/Navbar.vue'; 
+import Dashboard from '@components/general/Dashboard.vue'; 
 export default {
-    name: 'App'
+    name: 'App',
+    components: {
+        Navbar,
+        Dashboard,
+    }, 
 }
 </script>
 
